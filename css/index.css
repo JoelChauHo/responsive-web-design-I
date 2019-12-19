@@ -1,3 +1,254 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* end of reset all elements in index.html */
+
+.header
+{ display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+}
+
+.nav {
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
+	width: 70%;
+}
+
+.nav-item{
+	letter-spacing: 1px;
+	padding: 0 2%
+	justify-content: space-around;
+}
+
+.nav-item:hover{
+	  color:#AFEEEE;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	margin: 0 auto;
+	}
+.cta {
+	display: flex;
+	height:70vh;
+	justify-content: space-around;
+    align-items: center;
+	margin: 30px auto;
+	
+
+}
+
+.cta-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px auto;
+
+}
+.main-heading {
+	display: flex;
+	
+	
+	font-size: 60px;
+	text-align: center;
+	width: 40%;
+	margin: 10px 10px;
+}
+.cta-img{
+	display: flex;
+	width: 40%;
+}
+	
+
+.button{
+	display: flex;
+	border: solid;
+	font-size: 18px;
+	padding: 1px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-content{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 2%;
+}
+.middle-img{
+	display: flex;
+	justify-content: center;
+	padding:  0 2%;
+}
+
+	
+.bottom-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2%;
+	}
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 2%;
+}
+.contact > p:first-child {
+	line-height: 20px;
+	
+	}
+
+footer p{
+	display: flex;
+	justify-content: center;
+	
+}
+/* service.html */
+
+/* tablet 940px */
+
+@media (max-width: 940px){
+.header{ 
+display: flex;
+justify-content: space-evenly;
+flex-direction: column-reverse;
+align-items: center;
+}
+.main-heading {
+	display: flex;
+	
+	
+	font-size: 60px;
+	text-align: center;
+	width: 70%;
+	margin: 10px 10px;
+}
+.cta-img{
+	display: none;
+	width: 40%;
+}
+
+} /* end of tablet 940px, maybe 1024px */
+
+/* phone 640px */
+
+@media (max-width: 640px){
+.header{ 
+display: flex;
+justify-content: space-evenly;
+flex-direction: column-reverse;
+align-items: center;
+}
+.nav {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 1%;
+	width: 70%;
+}
+.main-heading {
+	display: flex;
+	
+	
+	font-size: 60px;
+	text-align: center;
+	width: 90%;
+	margin: 10px 10px;
+}
+.cta-img{
+	display: none;
+	width: 40%;
+}
+
+.top-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0 2%;
+}
+.middle-img{
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+    height: auto;
+}
+.bottom-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 2%;
+	}
+
+} /* end of phone 640px */
 
